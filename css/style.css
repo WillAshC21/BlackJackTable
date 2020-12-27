@@ -1,0 +1,224 @@
+body {
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  font-family: Arial;
+}
+
+#header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-table {
+  position: absolute;
+  top: 30%;
+  left: 50%
+  transform: translate(-50%, -50%);
+  width: 97.3%;
+  height: 60%;
+  background: linear-gradient(90deg, rgba(141,255,3,1) 0%, rgba(9,249,127,1) 52%, rgba(132,255,16,1) 96%);
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+}
+
+#player-hand {
+  position: absolute;
+  top: 10%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 5%;
+}
+
+#dealer-hand {
+  position: absolute;
+  top: 56%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 5%;
+}
+
+.selector {
+  text-align: center;
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 10%;
+  height: 600%;
+  background: #fff;
+  border-radius: 5px;
+  float: left;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+}
+
+#player-hand-count {
+  position: absolute;
+  top: 6%;
+  left: 3%;
+  transform: translate(-50%, -50);
+  font-size: 32px;
+  color: white;
+}
+#player-score {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50);
+  color: white;
+}
+#raise-count {
+  position: relative;
+  top: 10%;
+  left: 20%;
+  transform: translate(-50%, -50);
+}
+#header-status {
+  position: relative;
+  top: 27%;
+  left: 33%;
+  transform: translate(-50%, -50);
+  animation: 0.2s slider forwards;
+}
+#dealer-hand-count {
+  position: absolute;
+  top: 52%;
+  left: 3%;
+  transform: translate(-50%, -50);
+  font-size: 32px;
+  color: white;
+}
+#deal-bet {
+  position: relative;
+  top: 10%;
+  left: 20%;
+  transform: translate(-50%, -50);
+}
+#deal-title {
+  position: relative;
+  top: 10%;
+  left: 0%;
+  transform: translate(-50%, -50);
+  color: black;
+  animation: 0.2s slide forwards;
+}
+@keyframes slide {
+  from {
+  left: -150%;
+  } to {
+  left: 0%;
+  }
+}
+@keyframes slider {
+  from {
+  left: -150%;
+  } to {
+  left: 33%;
+  }
+}
+@keyframes slideb {
+  from {
+  left: -150%;
+  } to {
+  left: 38%;
+  }
+}
+#deal-type {
+  padding: 12px 50px;
+}
+#raise-type {
+  padding: 12px 50px;
+}
+.modals {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgb(0,0,0, 0.4);
+  animation: 3s popup ease-in-out;
+}
+
+@keyframes popup {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.blackjack-content {
+  background: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 53%;
+  height: 42%;
+}
+
+#msg {
+  position: relative;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#raise-submit, #deal-submit {
+  background: linear-gradient(90deg, rgba(0,255,210,1) 0%, rgba(0,104,255,1) 50%, rgba(45,0,255,1) 100%);
+  color: white;
+  transition: 3s;
+  font-size: 22px;
+}
+#raise-submit:hover, #deal-submit:hover {
+  background: #80ffaa;
+}
+#check, #raise, #fold, #reset {
+  padding: 10px 25px;
+  color: white;
+  font-size: 17px;
+  transition: all .5s ease-in-out;
+}
+#reset {
+  position: relative;
+  top: 30%;
+  left: 38%;
+  transform: translate(-50%, -50);
+  animation: 0.2s slideb forwards;
+  background: linear-gradient(90deg, rgba(0,255,210,1) 0%, rgba(0,104,255,1) 50%, rgba(45,0,255,1) 100%);
+}
+#check:hover, #raise:hover, #fold:hover, #reset:hover {
+  transform: scale(1.2);
+}
+#check {
+  background: #00e600;
+}
+#raise {
+  background: #ffff00;
+  color: #808080;
+}
+#fold {
+  background: #ff4d4d;
+}
+
+#counter {
+  color: #fff;
+  width: 97%;
+  height: 10%;
+  font-size: 10px;
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#winner, #drawn, #loser {
+  padding: 0.2px 30px;
+  color: white;
+  float: left;
+}

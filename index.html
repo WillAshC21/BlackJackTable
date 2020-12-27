@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="x-UA-Compatible" content='IE=edge'>
+  <title>War - Card Game</title>
+  <meta charset='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <div id="modal" class="modals">
+      <div class="blackjack-content">
+        <h1 id="msg"></h1>
+        <div id="deal-bet">
+          <h1 id="deal-title">Enter bet amount: </h1>
+          <input id="deal-type" type="number" min="1" max="100000"></input>
+          <button id="deal-submit">Submit</button>
+        </div>
+        <div id="raise-count">
+          <h1 id="deal-title">Enter bet amount: </h1>
+          <input id="raise-type" type="number" min="1" max="100000"></input>
+          <button id="raise-submit">Submit</button>
+        </div>
+          <h1 id="header-status"></h1>
+          <button id="reset">Reset</button>
+      </div>
+    </div>
+    <div id="header">
+      <h1 id="header-title">Blackjack</h1>
+      <h3 id="header-subtitle">A Card Game</h1>
+    </div>
+    <div class="card-table">
+
+      <h3 id ="player-hand-count"></h3>
+      <div id="player-hand">
+        <div class="card" id="player1"><h1 id="player-suit1"></h1></div>
+        <div class="card" id="player2"><h1 id="player-suit2"></h1></div>
+        <div class="card" id="player3"><h1 id="player-suit3"></h1></div>
+        <div class="card" id="player4"><h1 id="player-suit4"></h1></div>
+        <div class="card" id="player5"><h1 id="player-suit5"></h1></div>
+      </div>
+            <h3 id ="dealer-hand-count"></h3>
+      <div id="dealer-hand">
+        <div class="card" id="dealer1"><h1 id="dealer-suit1"></h1></div>
+        <div class="card" id="dealer2"><h1 id="dealer-suit2"></h1></div>
+        <div class="card" id="dealer3"><h1 id="dealer-suit3"></h1></div>
+        <div class="card" id="dealer4"><h1 id="dealer-suit4"></h1></div>
+        <div class="card" id="dealer5"><h1 id="dealer-suit5"></h1></div>
+      </div>
+
+      <div class="selector">
+        <button id="check">Check</button>
+        <button id="raise">Raise</button>
+        <button id="fold">Fold</button>
+      </div>
+    </div>
+    <div id="counter">
+      <div id="winner">
+      <h1 id="win">Win: 0</h1>
+      </div>
+      <div id="drawn">
+      <h1 id="draw">Draw: 0</h1>
+    </div>
+    <div id="loser">
+      <h1 id="lose">Lose: 0</h1>
+    </div>
+    </div>
+    <h1 id="player-score"></h1>
+    <script src='js/main.js'></script>
+</body>
+</html>
